@@ -1,6 +1,3 @@
-console.log('hello you are connected with us !');
-
-
 const p1 = document.querySelector('#msg-1');
 const p2 = document.querySelector('#msg-2');
 
