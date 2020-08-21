@@ -13,7 +13,15 @@ const forecast = (lat, lon, callback) => {
       callback(
         undefined,
 
-        ` It is currently ${body.main.temp} Fh out. There is a ${body.weather[0].description} So no any chance of rain.`
+        `This place is above approx ${body.main.sea_level}m from the see level.It is currently ${body.main.temp} Fh out. There is a ${body.weather[0].description} So no any chance of rain.
+        Here pressure is = ${body.main.pressure},
+        Minimum temperature is = ${body.main.temp_min} fh,
+        Maximum temperature is = ${body.main.temp_max} ,
+        Humidity is = ${body.main.humidity} ,
+        and also wind speed is = ${body.wind.speed}.
+        
+
+        Thanks for using our site.`
       );
     }
   });
