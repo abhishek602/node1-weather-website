@@ -142,14 +142,3 @@ app.listen(port, () => {
 
 
 
-// app.get("/help", (req, res) => {
-//     res.send([{
-//       name: "abhishek"
-//     }, {
-//       name: 'nainsi'
-//   }]);
-// });
-
-// app.get("/about", (req, res) => {
-//   res.send("<h1>About page in detail</h1>");
-// });
