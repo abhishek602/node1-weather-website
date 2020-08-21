@@ -8,7 +8,7 @@ const hbs = require('hbs');
 const { isError } = require('util');
 
 const app = express();
-
+const port = process.env.PORT || 3000
 //1. define paths for express config.
 
 const publicDirPath = path.join(__dirname, '../public');          //generating the path for public dir
@@ -113,8 +113,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('server is running'); 
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`); 
 });
 
 
